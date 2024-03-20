@@ -10,6 +10,7 @@ http.createServer((req,res) =>{
     switch(path){
         case '/contact': serveStaticFile(res,"contact.html","text/html") ;break;
         case '/': 
+        case '': 
         case '/index': serveStaticFile(res,"index.html","text/html") ;break;
         case '/posts': serveStaticFile(res,"posts.html","text/html") ;break;
         case '/under-construction': serveStaticFile(res,"index.html","text/html") ;break;
